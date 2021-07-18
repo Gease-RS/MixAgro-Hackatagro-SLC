@@ -56,6 +56,13 @@ const Login = () => {
           </div>
         </div>
         <button type="submit">Entrar</button>
+        <div>
+          <p>
+            <Link style={{ textDecoration: "none" }} to="/login">
+              Criar conta
+            </Link>
+          </p>
+        </div>
       </form>
     </>
   );
