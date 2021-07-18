@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import { AuthContext } from "../../context/AuthContext";
 import { useHistory } from "react-router-dom";
 import { Link } from "react-router-dom";
+import Button from "../../components/ui/button/Button";
 
 import "./login.css";
 
@@ -54,7 +55,7 @@ const Login = () => {
             </div>
           </div>
           <div className="footer">
-            <button type="submit">Entrar</button>
+            <Button type="submit">Entrar</Button>
             <div>
               <p>
                 <Link className="account" to="/account-create">

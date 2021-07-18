@@ -12,6 +12,9 @@ import ListOrdensServico from "./pages/ordensServico/ListOrdensServico";
 import CadastroOrdemServicoA from "./pages/ordensServico/CadastroOrdemServicoA";
 import CadastroOrdemServicoB from "./pages/ordensServico/CadastroOrdemServicoB";
 import CadastroOrdemServicoC from "./pages/ordensServico/CadastroOrdemServicoC";
+import Produto from "./pages/Produto";
+import ListaProduto from "./pages/ListaProduto";
+import TarefaAberta from "./pages/TarefaAberta";
 
 function App() {
   return (
@@ -42,7 +45,9 @@ function App() {
             path="/cadastro-orden-servico-c"
             component={CadastroOrdemServicoC}
           />
-          <Route path="/tarefa-aberta" component={CadastroOrdemServicoC} />
+          <Route path="/tarefa-aberta" component={TarefaAberta} />
+          <Route path="/produto" component={Produto} />
+          <Route path="/lista-produto" component={ListaProduto} />
         </Switch>
       </AuthProvider>
     </BrowserRouter>
