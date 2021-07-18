@@ -1,0 +1,14 @@
+.header-login {
+  width: 375px;
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #60c032;
+}
+
+.bloco-input {
+  display: flex;
+  flex-direction: column;
+}
