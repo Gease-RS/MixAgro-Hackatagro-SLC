@@ -19,7 +19,7 @@ const Login = () => {
       setError("");
       await login(email, password);
       alert("Login feito com Sucesso");
-      history.push("/list-ordens");
+      history.push("/list-ordens-servico");
     } catch {
       setError("Falha ao fazer o Login");
     }
