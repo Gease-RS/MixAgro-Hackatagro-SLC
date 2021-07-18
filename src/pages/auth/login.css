@@ -1,5 +1,9 @@
-.header-login {
+.container {
   width: 375px;
+  padding: 2rem;
+}
+
+.header-login {
   height: 330px;
   display: flex;
   flex-direction: column;
@@ -11,4 +15,17 @@
 .bloco-input {
   display: flex;
   flex-direction: column;
+  margin-top: 1rem;
+}
+
+.account {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.footer {
+  height: 190px;
+  justify-content: center;
 }

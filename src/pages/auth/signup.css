@@ -5,3 +5,9 @@
   align-items: center;
   justify-content: center;
 }
+
+.bloco-input {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}

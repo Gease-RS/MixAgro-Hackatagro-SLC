@@ -3,8 +3,8 @@ import { AuthContext } from "../../context/AuthContext";
 import { useHistory } from "react-router-dom";
 import { Link } from "react-router-dom";
 
-//import Button from "../../components/ui/button/Button";
-//import Input from "../../components/ui/input/Input";
+import Button from "../../components/ui/button/Button";
+import Input from "../../components/ui/input/Input";
 
 import "./login.css";
 
@@ -22,7 +22,7 @@ const Login = () => {
       setError("");
       await login(email, password);
       alert("Login feito com Sucesso");
-      history.push("/");
+      history.push("/list-ordens");
     } catch {
       setError("Falha ao fazer o Login");
     }
@@ -30,41 +30,45 @@ const Login = () => {
 
   return (
     <>
-      <div className="header-login">
-        <h1>MixAgro</h1>
-      </div>
-      {error && <span>{error}</span>}
-      <form onSubmit={handleSubmit}>
-        <div className="">
+      <div className="container">
+        <div className="header-login">
+          <h1>MixAgro</h1>
+        </div>
+        {error && <span>{error}</span>}
+        <form onSubmit={handleSubmit}>
           <div className="">
-            <label className="">email</label>
-            <input
-              placeholder=""
-              required="required"
-              type="text"
-              value={email}
-              onChange={(event) => setEmail(event.target.value)}
-            />
+            <div className="bloco-input">
+              <label className="">Email</label>
+              <input
+                placeholder="admin@admin.com.br"
+                required="required"
+                type="text"
+                value={email}
+                onChange={(event) => setEmail(event.target.value)}
+              />
+            </div>
+            <div className="bloco-input">
+              <label className="">Password</label>
+              <input
+                placeholder="123456"
+                type="password"
+                value={password}
+                onChange={(event) => setPassword(event.target.value)}
+              />
+            </div>
           </div>
-          <div className="bloco-input">
-            <label className="">Password</label>
-            <input
-              placeholder="*********"
-              type="password"
-              value={password}
-              onChange={(event) => setPassword(event.target.value)}
-            />
+          <div className="footer">
+            <button type="submit">Entrar</button>
+            <div>
+              <p>
+                <Link className="account" to="/login">
+                  Criar conta
+                </Link>
+              </p>
+            </div>
           </div>
-        </div>
-        <button type="submit">Entrar</button>
-        <div>
-          <p>
-            <Link style={{ textDecoration: "none" }} to="/login">
-              Criar conta
-            </Link>
-          </p>
-        </div>
-      </form>
+        </form>
+      </div>
     </>
   );
 };
