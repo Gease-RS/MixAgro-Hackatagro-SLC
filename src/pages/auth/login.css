@@ -4,28 +4,19 @@
 }
 
 .header-login {
-  height: 330px;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/mixagro-hackatagro-slc.appspot.com/o/Mixagro2.png?alt=media&token=d9600f8d-dafa-41b9-9abb-106ac2c3ab86");
+  background-repeat: no-repeat;
+  margin-left: 60px;
+  margin-top: 80px;
+  height: 130px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #60c032;
 }
 
 .bloco-input {
   display: flex;
   flex-direction: column;
-  margin-top: 1rem;
-}
-
-.account {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-decoration: none;
-}
-
-.footer {
-  height: 190px;
-  justify-content: center;
+  margin-top: 2rem;
 }

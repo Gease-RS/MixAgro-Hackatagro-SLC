@@ -1,0 +1,37 @@
+.block-termo {
+  display: flex;
+  flex-direction: row;
+}
+
+.btn-complement {
+  margin-top: 140px;
+}
+
+.bloco-termo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.check-termo {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  padding: 0;
+  align-items: flex-start;
+}
+
+.concordo-termo {
+  padding-left: 20px;
+  padding-top: 15px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.form-select {
+  width: 100%;
+  height: 48px;
+  background: "#e9ebec";
+  border-radius: 7px;
+  padding-left: 10px;
+}

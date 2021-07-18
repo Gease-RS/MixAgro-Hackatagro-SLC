@@ -21,14 +21,31 @@ input {
   border: none;
 }
 
+input:focus {
+  width: 100%;
+  height: 48px;
+  background: #e9ebec;
+  border-radius: 7px;
+  border: none;
+}
+
 button {
-  background: #60c032;
-  color: #fff;
-  width: 280px;
   height: 50px;
+  background: #00c112;
+  width: 300px;
   border-radius: 25px;
   border: none;
   font-size: 22px;
   margin: 2rem;
   cursor: pointer;
+  text-decoration: none;
+}
+
+.header-titulo {
+  margin-bottom: 30px;
+}
+
+.img-static {
+  width: 100%;
+  height: 100%;
 }

@@ -1,12 +1,11 @@
 .header {
-  background: #60c032;
-  width: 375px;
-  min-height: 540px;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/mixagro-hackatagro-slc.appspot.com/o/Home2.png?alt=media&token=fa281ef0-e1b6-4829-a261-ffa6fb2c4bb3");
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  color: white;
+  height: 550px;
+  margin-top: -30px;
 }
 
 .footer {
@@ -15,7 +14,7 @@
   justify-content: center;
   align-items: center;
   width: 375px;
-  height: 260px;
+  height: 150px;
 }
 
 .logo {
@@ -40,4 +39,8 @@ label {
 
 input {
   padding-left: 0.6rem;
+}
+
+.container {
+  height: 700px;
 }

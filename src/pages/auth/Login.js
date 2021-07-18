@@ -28,10 +28,9 @@ const Login = () => {
   return (
     <>
       <div className="container">
-        <div className="header-login">
-          <h1>MixAgro</h1>
-        </div>
+        <div className="header-login"></div>
         {error && <span>{error}</span>}
+
         <form onSubmit={handleSubmit}>
           <div className="">
             <div className="bloco-input">
@@ -58,8 +57,8 @@ const Login = () => {
             <button type="submit">Entrar</button>
             <div>
               <p>
-                <Link className="account" to="/login">
-                  Criar conta
+                <Link className="account" to="/account-create">
+                  Cadastre-se
                 </Link>
               </p>
             </div>
