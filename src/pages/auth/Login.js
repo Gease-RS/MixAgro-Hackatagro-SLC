@@ -3,9 +3,6 @@ import { AuthContext } from "../../context/AuthContext";
 import { useHistory } from "react-router-dom";
 import { Link } from "react-router-dom";
 
-import Button from "../../components/ui/button/Button";
-import Input from "../../components/ui/input/Input";
-
 import "./login.css";
 
 const Login = () => {

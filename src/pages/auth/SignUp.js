@@ -11,11 +11,6 @@ const SignUp = () => {
   const history = useHistory();
   const { signUp } = useContext(AuthContext);
 
-  const fakeNome = (e) => {
-    e.preventDefault();
-    console.log(name);
-  };
-
   async function handleSubmit(e) {
     e.preventDefault();
 
