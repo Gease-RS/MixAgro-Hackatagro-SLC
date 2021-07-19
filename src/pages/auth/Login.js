@@ -35,7 +35,9 @@ const Login = () => {
         <form onSubmit={handleSubmit}>
           <div className="">
             <div className="bloco-input">
-              <label className="">Email</label>
+              <label className="">
+                Email <span className="acess">admin@admin.com</span>
+              </label>
               <input
                 placeholder="admin@admin.com.br"
                 required="required"
@@ -45,7 +47,9 @@ const Login = () => {
               />
             </div>
             <div className="bloco-input">
-              <label className="">Password</label>
+              <label className="">
+                Password <span className="acess">123456</span>
+              </label>
               <input
                 placeholder="123456"
                 type="password"

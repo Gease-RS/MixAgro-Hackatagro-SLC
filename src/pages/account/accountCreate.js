@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import { AuthContext } from "../../context/AuthContext";
 import { useHistory } from "react-router-dom";
 import { Link } from "react-router-dom";
+import Button from "../../components/ui/button/Button";
 
 const AccountCreate = () => {
   const [name, setName] = useState();
@@ -22,7 +23,7 @@ const AccountCreate = () => {
       setError("");
       await signUp(email, password);
       alert("Sua conta foi criada com Sucesso");
-      history.push("/oredens-servico");
+      history.push("/list-ordens-servico");
     } catch {
       setError("Falha ao criar a conta");
     }
@@ -78,13 +79,15 @@ const AccountCreate = () => {
             </div>
           </div>
 
-          <button type="submit">Próximo</button>
-          <div>
-            <p>
-              <Link className="account" to="/login">
-                Voltar
-              </Link>
-            </p>
+          <div className="footer">
+            <Button type="submit">Próximo</Button>
+            <div>
+              <p>
+                <Link className="account" to="/login">
+                  Voltar
+                </Link>
+              </p>
+            </div>
           </div>
         </form>
       </div>
