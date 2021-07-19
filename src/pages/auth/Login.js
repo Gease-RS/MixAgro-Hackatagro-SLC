@@ -19,7 +19,7 @@ const Login = () => {
     try {
       setError("");
       await login(email, password);
-      alert("Login feito com Sucesso");
+      alert("Seja bem-vindo ao MixAgro");
       history.push("/list-ordens-servico");
     } catch {
       setError("Falha ao fazer o Login");
@@ -39,7 +39,7 @@ const Login = () => {
                 Email <span className="acess">admin@admin.com</span>
               </label>
               <input
-                placeholder="admin@admin.com.br"
+                placeholder="admin@admin.com"
                 required="required"
                 type="text"
                 value={email}
