@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 function AntiPragaAProdutoY() {
   return (
     <div className="img-statico">
-      <Link to="verificacao-ph">
+      <Link to="processo-antipraga-produto-z">
         <img
-          src="https://firebasestorage.googleapis.com/v0/b/mixagro-hackatagro-slc.appspot.com/o/antipraga-arroz10kg.png?alt=media&token=05919a47-ae09-4b17-ad43-d23a6b67522f"
+          src="https://firebasestorage.googleapis.com/v0/b/mixagro-hackatagro-slc.appspot.com/o/antipraga-arroz-4kg.png?alt=media&token=81082875-46bd-4636-a149-0ae008a90fd4"
           alt="Processo Anti Praga produto Y"
         />
       </Link>

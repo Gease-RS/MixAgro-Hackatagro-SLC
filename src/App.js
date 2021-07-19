@@ -23,9 +23,10 @@ import AntiPragaAProdutoY from "./pages/AntiPragaProdutoY";
 import AntiPragaAProdutoX from "./pages/AntiPragaAProdutoX";
 import AntiPragaAProdutoC from "./pages/AntiPragaAProdutoC";
 import AntiPragaAProdutoZ from "./pages/AntiPragaAProdutoZ";
-import OqueFuncionou from "./pages/OqueFuncionou";
+import OqueNaoFuncionou from "./pages/OqueNaoFuncionou";
 import ProcessoFinalizou from "./pages/ProcessoFinalizou";
 import VoceConcluiu from "./pages/VoceConcluiu";
+import PontuacaoAntiPragas from "./pages/PontuacaoAntiPragas";
 
 function App() {
   return (
@@ -64,12 +65,12 @@ function App() {
           <Route path="/verificacao-ph" component={VerificacaoPH} />
           <Route path="/verificacao-caldeira" component={VerificacaoCaldeira} />
           <Route
-            path="/processo-antipraga-produto-x"
-            component={AntiPragaAProdutoX}
-          />
-          <Route
             path="/processo-antipraga-produto-y"
             component={AntiPragaAProdutoY}
+          />
+          <Route
+            path="/processo-antipraga-produto-x"
+            component={AntiPragaAProdutoX}
           />
           <Route
             path="/processo-antipraga-produto-c"
@@ -79,9 +80,13 @@ function App() {
             path="/processo-antipraga-produto-z"
             component={AntiPragaAProdutoZ}
           />
-          <Route path="/o-que-funcionou" component={OqueFuncionou} />
+          <Route path="/o-que-nao-funcionou" component={OqueNaoFuncionou} />
           <Route path="/processo-finalizou" component={ProcessoFinalizou} />
           <Route path="/voce-concluiu" component={VoceConcluiu} />
+          <Route
+            path="/pontuacao-anti-pragas"
+            component={PontuacaoAntiPragas}
+          />
         </Switch>
       </AuthProvider>
     </BrowserRouter>
